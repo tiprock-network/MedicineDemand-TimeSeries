@@ -5,84 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Health Box</title>
+    <link rel="icon" href="{{url_for('static',filename='images/fav.png')}}" type="image/x-icon">
     <script src="https://kit.fontawesome.com/912e452282.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Open+Sans:wght@700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tilt+Warp&display=swap" rel="stylesheet">
 </head>
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Open+Sans:wght@700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tilt+Warp&display=swap');
-    *{
-        margin: 0;
-        overflow-x: hidden;
-    }
-    /*
-    font-family: 'Climate Crisis', cursive;
-    font-family: 'Lato', sans-serif;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Open Sans', sans-serif;
-    font-family: 'Poppins', sans-serif;
-    font-family: 'Tilt Warp', cursive;
-    */
-
-    body{
-        font-size: 18px;
-        color: #333;
-        font-family: 'Montserrat', sans-serif;
-    }
-    .header-bar{
-        width: 100%;
-        color: #fff;
-        background: rgb(40, 148, 89);
-        padding: 10px 20px;
-        height: 80px;
-        
-        /*overflow-x: hidden;*/
-    }
-    
-    .container{
-        margin-top: 5%;
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        gap: 10px;
-        width: 70%;
-        transform: translateX(20%);
-        cursor:pointer;
-    }
-
-    .categ{
-        border: 1px solid #ccc;
-        padding: 10px 20px;
-    }
-
-    .btn-pred{
-        padding: 10px 20px;
-        background: rgb(40, 148, 89);
-        border: none;
-        border-radius: 8px;
-        font-size: 18px;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 800;
-        color: #fff;
-        width: 100%;
-        text-align: center;
-        cursor: pointer;
-        transition: ease-in-out all 0.6s;
-        margin-top: 20%;
-        margin-bottom: 20px;
-    }
-    .btn-pred:hover{
-        background: rgb(57, 172, 109);
-    }
-    .btn-pred>a{
-        text-decoration: none;
-        color: #fff;
-    }
-    
-</style>
+<link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
 <body>
     <div class="header-bar">
-        <h1> <i class="fa fa-box-open"></i> <i class="fa fa-capsules"></i> Health Box</h1>
+        <h1> <i class="fa fa-box-open"></i> <i class="fa fa-capsules"></i> Health Box</h1><sub>version 1.0.1</sub>
+    </div>
+    <div class="logo"><img src="{{url_for('static',filename='images/logo.png')}}" alt="">
+        <h1>Welcome to Health Box</h1>
+        <p>Health Box has a variety of services concerned with knowing the status of your medicine supply, cost of the your health, and other services.</p>
     </div>
     <div class="container">
         <div class="categ">
