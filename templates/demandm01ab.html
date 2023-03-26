@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Box</title>
+    <script src="https://kit.fontawesome.com/912e452282.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Open+Sans:wght@700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tilt+Warp&display=swap" rel="stylesheet">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Open+Sans:wght@700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tilt+Warp&display=swap');
+    *{
+        margin: 0;
+        box-sizing: border-box;
+    }
+    /*
+    font-family: 'Climate Crisis', cursive;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Tilt Warp', cursive;
+    */
+
+    body{
+        font-size: 18px;
+        color: #333;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .header-bar{
+        width: 100%;
+        color: #fff;
+        background: rgb(40, 148, 89);
+        padding: 10px 20px;
+        height: 80px;
+        
+        /*overflow-x: hidden;*/
+    }
+    .form-container{
+        width: 60%;
+        padding: 10px 20px;
+        transform: translateX(30%);
+        margin-top: 30px;
+        box-shadow: 2px 2px 4px 2px #ccc;
+        margin-bottom: 50px;
+    }
+
+    .field{
+        padding: 20px;
+        margin-bottom: 20px;
+        border-left: 5px solid rgb(40, 148, 89);
+    }
+    .field>label{
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .field>input{
+        outline: none;
+        padding: 10px 20px;
+        font-size: 18px;
+        font-family: 'Montserrat', sans-serif;
+        border: none;
+        background: #e4e2e2;
+        margin-top: 20px;
+        margin-bottom: 5px;
+        width: 45%;
+    }
+    .info{
+        font-size: 14px;
+        color: #888888;
+        width: 80%;
+        transform: translateX(10%);
+        padding: 10px 20px;
+    }
+    #frm-submit{
+        padding: 10px 20px;
+        background: rgb(40, 148, 89);
+        border: none;
+        border-radius: 8px;
+        font-size: 18px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        color: #fff;
+        width: 100%;
+        text-align: center;
+        cursor: pointer;
+        transition: ease-in-out all 0.6s;
+        margin-bottom: 20px;
+    }
+    #frm-submit:hover{
+        background: rgb(57, 172, 109);
+    }
+
+    .prediction-container{
+        width: 60%;
+        transform: translateX(30%);
+        text-align:center;
+        margin-top: 5%;
+        padding: 10px 20px;
+        box-shadow: 2px 2px 4px 0px #ccc;
+    }
+    .prediction-container>h2{
+        font-size: 50px;
+        font-weight: 800;
+    }
+    .fa-circle-check{
+        color:rgb(40, 148, 89);
+    }
+    
+    
+</style>
+<body>
+    <div class="header-bar">
+        <h1> <i class="fa fa-box-open"></i> <i class="fa fa-capsules"></i> Health Box</h1>
+    </div>
+
+    <div class="prediction-container">
+    <p><i class="fa fa-circle-check"></i> The expected demand for the drug is : </p>
+    <h2>{{y_hat}}</h2>
+    <p>Million</p>
+    </div>
+</body>
+</html>
