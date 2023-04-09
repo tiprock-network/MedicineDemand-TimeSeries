@@ -1,0 +1,21 @@
+{
+"intents":[
+    {
+        "tag":"greetings",
+        "patterns":["Hi","Hello","Good morning","Good Afternoon","Good Evening","How are you","what's up?"],
+        "responses":["Hello","Hey","Hi"]
+    }
+    ,
+    {
+        "tag":"name",
+        "patterns":["What's your name","Name","What can I call you","Tell me your name","didn't catch your name","What is your name?"],
+        "responses":["Hi, my name is MediBot","I go by the name MediBot","I am MediBot","I am happy to meet you, I am MediBot"]
+    }
+    ,
+    {
+        "tag":"problem",
+        "patterns":["nose bleeding","nose dripping blood","blood from my nose","blood in nose"],
+        "responses":["Tilt head down and squeeze lightly upper nostrils untils it stops, otherwise seek visit nearest medical centre","Tilt head and squeeze nose strils gently; while seek medical help","MediBot just seeked help, tilt head down and squeeze gently"]
+    }
+]
+}

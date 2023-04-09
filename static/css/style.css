@@ -157,3 +157,77 @@ body{
     color:rgb(40, 148, 89);
 }
 
+/*Chatbot styling*/
+.chat-container{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    width: 80%;
+    transform: translateX(10%);
+    padding: 10px 20px;
+    margin-top: 5%;
+    border: 1px solid #ccc;
+}
+.chat-input-box{
+    padding: 10px 20px;
+    background: #f4f4f4;
+    
+}
+.chat-input-box>input{
+    padding: 10px 20px;
+    width: 70%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    outline: none;
+    font-weight: 600;
+    color: #333;
+    border: none;
+    background: #ccc;
+    
+}
+.chat-input-box>button{
+    padding: 10px 20px;
+    width: 15%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: #fff;
+    background: rgb(37, 177, 107);
+    font-weight: 500;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.chat-input-box>button:hover{
+    background: rgb(35, 150, 93);
+}
+
+.chat-text>i{
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.chat-text>p{
+    
+    font-size: 16px;
+}
+.chat-text{
+    margin-bottom: 20px;
+}
+
+.right{
+    border: none;
+    padding: 5px;
+    width: 50%;
+    background: #f4f4f4;
+    border: none;
+    margin-left: 48%;
+}
+.left{
+    border: none;
+    padding: 5px;
+    width: 60%;
+    background: #f4f4f4;
+    border: none;
+    margin-top: 10px;
+}
+/*end of chatbot styling*/
